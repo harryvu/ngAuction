@@ -1,0 +1,83 @@
+@import "../styles.scss";
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: $sidebar-color;
+}
+
+.content {
+  grid-area: content;
+  position: relative;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  min-height: 100vh;
+  min-width: 600px;
+  grid-gap: $grid-gap;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 52px auto 80px;
+  grid-template-areas:
+    "header   header  header"
+    "content  content sidebar"
+    "footer   footer  footer";
+  color: #444;
+}
+
+.box {
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
+  padding: 50px;
+  font-size: 150%;
+}
+
+.header,
+.footer {
+  background-color: $primary-color;
+}
+
+.sidebar {
+  padding: 20px;
+  text-align: center;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+$primary-color:#804432;
+$secondary-color: #FF8863;
+$content-color: #806158;
+$sidebar-color: #CC6D50;
+$background: #FFC2B0;
+$grid-gap: 5px;
+$border-radius: 5px;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $background;
+}
+
+.capitalized {
+  text-transform: uppercase;
+  font-family: system-ui;
+  color: $secondary-color;
+}

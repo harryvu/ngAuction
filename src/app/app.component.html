@@ -1,14 +1,14 @@
-<nga-navbar></nga-navbar>
-<div class="container">
-  <div class="row">
-    <div class="col-md-3">
-       <nga-search></nga-search>
-     </div>
-
-    <div class="col-md-9">
-       <router-outlet>router outlet...</router-outlet>
-     </div>
+<div class="wrapper">
+  <div class="header">
+    <nga-navbarflex></nga-navbarflex>
+  </div>
+  <div class="sidebar">
+    <nga-search></nga-search>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="footer">
+    <nga-footer></nga-footer>
   </div>
 </div>
-
-<nga-footer></nga-footer>
